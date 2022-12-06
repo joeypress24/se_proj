@@ -1,3 +1,4 @@
+# Author: Joey Press, Abdu Sallouh, and Gregory Smith
 # A subsystem used for the University's Clinics
 class Clinics:
     class Clinic:
@@ -299,6 +300,7 @@ class UI:
         print('Date: ', summary[0], ' ', str(start + timedelta(getattr(Dates, summary[0]).value))[:-9])
         print('Time: ', summary[1])
         print('Student: ', summary[2])
+        print()
         input('Press enter to confirm')
         self.con.confirmAppointment()
         return self.showSuccess()
@@ -306,6 +308,7 @@ class UI:
     def showUnavaliability(self):
         print()
         print('Clinic Capacity Full.. Try again later')
+        self.showAppointments()
 
     def showSuccess(self):
         print()
@@ -349,7 +352,9 @@ class UI:
             print('Date: ', appointments[1].date.split('/')[0], ' ', ' ', str(start + timedelta(getattr(Dates, appointments[1].date.split('/')[0]).value))[:-9])
             print('Time: ', appointments[1].date.split('/')[1])
             print('Student: ', appointments[1].student)
-
+            
+        print()
+        input('Press any key to exit')
 
 ##Start of the main prograwm
 UI()
