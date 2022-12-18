@@ -11,6 +11,9 @@ Samples,and Testing (White Box, Black Box, and
 Automation methods employed). Additionally we used the class diagrams
 to create a sample script for the "book appointment" feature.
 
+Deliverable 4: Mock up of what a burndown chart would look like for our
+group, as well as a simple product backlog display.
+
 Overall, this project was instrumental in teaching me about the process
 of software engineering. The biggest challenge we encountered was the
 vague nature of the requirements, which we resolved by scheduling
